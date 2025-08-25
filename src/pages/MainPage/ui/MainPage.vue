@@ -31,7 +31,7 @@ weather.initCurrentWeather({ city: city.currentCity.id });
             {{ weather.currentWeather.currentTemp }}
           </template>
         </span>
-        <div class="flex flex-col space-y-0 md:space-y-3 font-medium text-lg md:text-2xl">
+        <div class="flex flex-col space-y-1 md:space-y-3 font-medium text-lg md:text-2xl">
           <Skeleton v-if="weather.currentWeatherLoading" width="8rem" height="1rem" />
           <div v-else-if="weather.currentWeather?.description && !weather.currentWeatherLoading">
             {{ weather.currentWeather.description }}
